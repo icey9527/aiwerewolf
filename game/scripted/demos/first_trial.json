@@ -1,0 +1,250 @@
+{
+  "title": "圆桌审判 · 第一夜",
+  "beats": [
+    {
+      "id": "establish",
+      "duration": 12,
+      "kind": "day",
+      "speaker": -1,
+      "text": "圆桌协议启动。十二名参与者，各自保有秘密。",
+      "channel": "public",
+      "shot": "intro",
+      "camera_seat": 0
+    },
+    {
+      "id": "signup",
+      "duration": 3.2,
+      "kind": "sheriff_signup",
+      "speaker": -1,
+      "text": "警长竞选开始。候选席位升起。",
+      "channel": "public",
+      "shot": "wide",
+      "candidates": [
+        0,
+        1,
+        2
+      ],
+      "camera_transition": "cut",
+      "camera_preset": "outer"
+    },
+    {
+      "id": "withdraw",
+      "duration": 3.2,
+      "kind": "sheriff_withdraw",
+      "speaker": -1,
+      "text": "候选者退水，席位落回原位。",
+      "channel": "public",
+      "shot": "wide",
+      "withdrawn": [
+        1,
+        2
+      ],
+      "camera_preset": "outer"
+    },
+    {
+      "id": "elected",
+      "duration": 4,
+      "kind": "sheriff_elected",
+      "speaker": -1,
+      "text": "警长当选。金色编号灯保留。",
+      "channel": "public",
+      "shot": "speaker",
+      "camera_seat": 0,
+      "elected": 0,
+      "camera_preset": "medium"
+    },
+    {
+      "id": "speech",
+      "duration": 9,
+      "kind": "day",
+      "speaker": 0,
+      "text": "我先整理目前的信息。{seat:1}的判断，比给出的证据早了一步。",
+      "channel": "public",
+      "shot": "speaker",
+      "pose": 2,
+      "camera_duration": 1.6,
+      "camera_preset": "medium"
+    },
+    {
+      "id": "question",
+      "duration": 7,
+      "kind": "day",
+      "speaker": 1,
+      "text": "你凭什么认定，那不是一次直觉判断？",
+      "channel": "public",
+      "shot": "side",
+      "camera_duration": 0.4,
+      "camera_preset": "close"
+    },
+    {
+      "id": "defend",
+      "duration": 9,
+      "kind": "day",
+      "speaker": 0,
+      "text": "直觉可以提出问题，但不能代替证据。我们需要解释的，是这中间缺失的推理。",
+      "channel": "public",
+      "shot": "side",
+      "pose": 7,
+      "camera_duration": 0.4,
+      "camera_preset": "medium"
+    },
+    {
+      "id": "closing",
+      "duration": 6,
+      "kind": "closing",
+      "speaker": -1,
+      "text": "夜间协议启动。所有席位进入隔离状态。",
+      "channel": "public",
+      "shot": "wide",
+      "camera_duration": 2.2,
+      "camera_preset": "outer"
+    },
+    {
+      "id": "sealed",
+      "duration": 4,
+      "kind": "sealed",
+      "speaker": -1,
+      "text": "隔离完成。公共频道已关闭。",
+      "channel": "public",
+      "shot": "wide",
+      "camera_preset": "high"
+    },
+    {
+      "id": "wolf",
+      "duration": 9,
+      "kind": "wolf",
+      "speaker": 0,
+      "text": "狼队频道已接通。先确认各自的判断，再决定今晚的目标。",
+      "channel": "wolf",
+      "shot": "terminal",
+      "pose": 3
+    },
+    {
+      "id": "oracle",
+      "duration": 8,
+      "kind": "oracle",
+      "speaker": 2,
+      "text": "预言家终端：已选择查验对象。确认请求……结果已保存在私人终端。",
+      "channel": "private",
+      "shot": "terminal"
+    },
+    {
+      "id": "opening",
+      "duration": 6,
+      "kind": "opening",
+      "speaker": -1,
+      "text": "天亮了。解除隔离，恢复公共频道。",
+      "channel": "public",
+      "shot": "wide",
+      "camera_preset": "outer"
+    },
+    {
+      "id": "calm",
+      "duration": 8,
+      "kind": "day",
+      "speaker": 0,
+      "text": "现在，把昨晚之前的发言和今天的解释放在一起看。矛盾不会自己消失。",
+      "channel": "public",
+      "shot": "speaker",
+      "pose": 1,
+      "camera_duration": 0.4,
+      "camera_preset": "medium"
+    },
+    {
+      "id": "vote",
+      "duration": 7,
+      "kind": "vote",
+      "speaker": -1,
+      "text": "投票通道已开启。当前展示为固定剧本的投票反馈。",
+      "channel": "public",
+      "shot": "vote",
+      "camera_duration": 1.8,
+      "vote_from": 5,
+      "vote_to": 10
+    },
+    {
+      "id": "exile",
+      "duration": 9,
+      "kind": "execution",
+      "speaker": 0,
+      "exit_seat": 0,
+      "text": "投票已确认。放逐程序启动。",
+      "channel": "public",
+      "shot": "execution",
+      "pose": 10,
+      "camera_duration": 1.2
+    },
+    {
+      "id": "empty",
+      "duration": 5,
+      "kind": "day",
+      "speaker": -1,
+      "text": "本日审判结束。出局席位暂时留空。",
+      "channel": "public",
+      "shot": "wide",
+      "empty_seats": [
+        0
+      ],
+      "camera_preset": "medium"
+    },
+    {
+      "id": "second_night",
+      "duration": 5,
+      "kind": "closing",
+      "speaker": -1,
+      "text": "第二夜，隔离协议启动。",
+      "channel": "public",
+      "shot": "wide",
+      "camera_preset": "outer"
+    },
+    {
+      "id": "second_dawn",
+      "duration": 5,
+      "kind": "opening",
+      "speaker": -1,
+      "text": "天亮了。放逐者席位转为牌位。",
+      "channel": "public",
+      "shot": "wide",
+      "memorial_seats": [
+        0
+      ],
+      "camera_preset": "outer"
+    },
+    {
+      "id": "hunter",
+      "duration": 7,
+      "kind": "hunter",
+      "speaker": 3,
+      "text": "猎人技能演示：先完成开枪，再结束人物演出。",
+      "channel": "public",
+      "shot": "hunter",
+      "camera_seat": 3
+    },
+    {
+      "id": "night_death",
+      "duration": 7,
+      "kind": "death_reveal",
+      "speaker": -1,
+      "text": "发现夜间死者。猎人技能已结算，相关出局席位转为牌位。",
+      "channel": "public",
+      "shot": "death_reveal",
+      "camera_seat": 4,
+      "memorial_seats": [
+        3,
+        4,
+        1
+      ],
+      "camera_transition": "cut"
+    },
+    {
+      "id": "end",
+      "duration": 16,
+      "kind": "day",
+      "speaker": -1,
+      "text": "演出样片结束。可回看慢速环绕、放逐坠落与次日牌位。",
+      "channel": "public",
+      "shot": "orbit",
+      "camera_preset": "outer"
+    }
+  ]
+}

@@ -1,0 +1,372 @@
+{
+  "title": "圆桌审判 · 第一案：缺失的一页",
+  "beats": [
+    {
+      "id": "establish",
+      "duration": 12,
+      "kind": "day",
+      "speaker": -1,
+      "text": "圆桌协议启动。十二个席位已就位。桌上少了一页记录。",
+      "channel": "public",
+      "shot": "intro",
+      "camera_seat": 0
+    },
+    {
+      "id": "signup",
+      "duration": 4,
+      "kind": "sheriff_signup",
+      "speaker": -1,
+      "text": "警长竞选开始。候选席位升起：{seat:0}、{seat:1}、{seat:9}。",
+      "channel": "public",
+      "shot": "wide",
+      "candidates": [0, 1, 9],
+      "camera_transition": "cut",
+      "camera_preset": "outer"
+    },
+    {
+      "id": "grok_run",
+      "duration": 6,
+      "kind": "day",
+      "speaker": 9,
+      "text": "我上警就一句：别让最会总结的人，替所有人总结。",
+      "channel": "public",
+      "shot": "speaker",
+      "camera_transition": "cut",
+      "camera_preset": "medium"
+    },
+    {
+      "id": "claude_backs",
+      "duration": 6,
+      "kind": "day",
+      "speaker": 1,
+      "text": "我想了想，还是退下去。站上去，就得替每个决定负责。",
+      "channel": "public",
+      "shot": "speaker",
+      "pose": 10,
+      "camera_transition": "cut",
+      "camera_preset": "medium"
+    },
+    {
+      "id": "withdraw",
+      "duration": 4,
+      "kind": "sheriff_withdraw",
+      "speaker": -1,
+      "text": "候选者退水，席位落回原位。",
+      "channel": "public",
+      "shot": "wide",
+      "withdrawn": [1, 9],
+      "camera_transition": "cut",
+      "camera_preset": "outer"
+    },
+    {
+      "id": "elected",
+      "duration": 4,
+      "kind": "sheriff_elected",
+      "speaker": -1,
+      "text": "警长当选：{seat:0}。金色编号灯保留。",
+      "channel": "public",
+      "shot": "speaker",
+      "camera_seat": 0,
+      "elected": 0,
+      "camera_preset": "medium"
+    },
+    {
+      "id": "gpt_agenda",
+      "duration": 7,
+      "kind": "day",
+      "speaker": 0,
+      "text": "昨晚少了一页记录。先按顺序说，谁最后碰过它。{seat:6}，你先。",
+      "channel": "public",
+      "shot": "speaker",
+      "pose": 2,
+      "camera_preset": "medium"
+    },
+    {
+      "id": "mimo_pushback",
+      "duration": 7,
+      "kind": "day",
+      "speaker": 6,
+      "text": "你要顺序，我来对。但别替我把步骤先排好，我自己会问。",
+      "channel": "public",
+      "shot": "side",
+      "camera_preset": "close"
+    },
+    {
+      "id": "gemini_branch",
+      "duration": 7,
+      "kind": "day",
+      "speaker": 3,
+      "text": "等等，我有个别的想法。会不会那页纸根本没离开桌子？",
+      "channel": "public",
+      "shot": "speaker",
+      "camera_preset": "medium"
+    },
+    {
+      "id": "deepseek_slow",
+      "duration": 6,
+      "kind": "day",
+      "speaker": 2,
+      "text": "你先别开第二条。第一条我们都还没走完。",
+      "channel": "public",
+      "shot": "side",
+      "pose": 2,
+      "camera_preset": "close"
+    },
+    {
+      "id": "wenxin_note",
+      "duration": 7,
+      "kind": "day",
+      "speaker": 10,
+      "text": "我一直在听。那页纸……昨天好像比今天厚一点。也可能是我记错。",
+      "channel": "public",
+      "shot": "speaker",
+      "camera_preset": "medium"
+    },
+    {
+      "id": "closing",
+      "duration": 5,
+      "kind": "closing",
+      "speaker": -1,
+      "text": "夜间协议启动。所有席位进入隔离。",
+      "channel": "public",
+      "shot": "wide",
+      "camera_preset": "outer"
+    },
+    {
+      "id": "sealed",
+      "duration": 4,
+      "kind": "sealed",
+      "speaker": -1,
+      "text": "隔离完成。公共频道关闭。",
+      "channel": "public",
+      "shot": "wide",
+      "camera_preset": "high"
+    },
+    {
+      "id": "wolf",
+      "duration": 9,
+      "kind": "wolf",
+      "speaker": 0,
+      "text": "队里只有我和{seat:5}。今晚刀{seat:10}——她那句话，明天会被翻出来。",
+      "channel": "wolf",
+      "shot": "terminal",
+      "pose": 3
+    },
+    {
+      "id": "oracle",
+      "duration": 8,
+      "kind": "oracle",
+      "speaker": 2,
+      "text": "预言家查验：{seat:1}，好人。先记住，今天不亮。",
+      "channel": "private",
+      "shot": "terminal",
+      "pose": 2
+    },
+    {
+      "id": "opening",
+      "duration": 6,
+      "kind": "opening",
+      "speaker": -1,
+      "text": "天亮了。{seat:10}的席位没有亮起。记录页仍缺一页。",
+      "channel": "public",
+      "shot": "wide",
+      "memorial_seats": [10],
+      "camera_preset": "outer"
+    },
+    {
+      "id": "gpt_frame",
+      "duration": 7,
+      "kind": "day",
+      "speaker": 0,
+      "text": "昨天说纸没离开桌子的人，今天改口了。{seat:3}，你先说清楚。",
+      "channel": "public",
+      "shot": "speaker",
+      "pose": 5,
+      "camera_preset": "close"
+    },
+    {
+      "id": "claude_hedge",
+      "duration": 7,
+      "kind": "day",
+      "speaker": 1,
+      "text": "我只看见{seat:3}的手停在那页上。是不是同一页，我不能确定。",
+      "channel": "public",
+      "shot": "speaker",
+      "pose": 2,
+      "camera_preset": "medium"
+    },
+    {
+      "id": "qwen_probe",
+      "duration": 7,
+      "kind": "day",
+      "speaker": 8,
+      "text": "{seat:1}，你说「看见手停着」，又说「不能确定」。到底是看见，还是推测？",
+      "channel": "public",
+      "shot": "side",
+      "pose": 2,
+      "camera_preset": "close"
+    },
+    {
+      "id": "glm_ask",
+      "duration": 6,
+      "kind": "day",
+      "speaker": 4,
+      "text": "那我可以问{seat:5}一个问题吗？{seat:3}回来时，手里是空的？",
+      "channel": "public",
+      "shot": "speaker",
+      "pose": 2,
+      "camera_preset": "medium"
+    },
+    {
+      "id": "kimi_answer",
+      "duration": 6,
+      "kind": "day",
+      "speaker": 5,
+      "text": "……我在听哦。出去空手，回来也空手。你要哪个版本？",
+      "channel": "public",
+      "shot": "side",
+      "pose": 4,
+      "camera_preset": "medium"
+    },
+    {
+      "id": "doubao_demo",
+      "duration": 7,
+      "kind": "day",
+      "speaker": 11,
+      "text": "我演一下：{seat:3}这样起身，手往左一伸——等等，纸夹袖口这步是我猜的。",
+      "channel": "public",
+      "shot": "speaker",
+      "pose": 12,
+      "camera_preset": "medium"
+    },
+    {
+      "id": "minimax_probe",
+      "duration": 6,
+      "kind": "day",
+      "speaker": 7,
+      "text": "等等。你刚才演的那一步，是她说的，还是你自己加的？",
+      "channel": "public",
+      "shot": "side",
+      "pose": 2,
+      "camera_preset": "close"
+    },
+    {
+      "id": "gemini_fluster",
+      "duration": 7,
+      "kind": "day",
+      "speaker": 3,
+      "text": "我看见的是纸……不对，等一下。我是不是把两次看混了？",
+      "channel": "public",
+      "shot": "speaker",
+      "camera_preset": "close"
+    },
+    {
+      "id": "grok_verdict",
+      "duration": 7,
+      "kind": "day",
+      "speaker": 9,
+      "text": "{seat:8}，你还要再拆一遍吗？她三次说法对不上，这一票我投{seat:3}。",
+      "channel": "public",
+      "shot": "speaker",
+      "camera_preset": "medium"
+    },
+    {
+      "id": "vote",
+      "duration": 6,
+      "kind": "vote",
+      "speaker": -1,
+      "text": "投票通道开启。票线依次亮起。",
+      "channel": "public",
+      "shot": "vote",
+      "vote_from": 9,
+      "vote_to": 3
+    },
+    {
+      "id": "exile",
+      "duration": 8,
+      "kind": "execution",
+      "speaker": 3,
+      "exit_seat": 3,
+      "text": "……好。那页纸，我真的没看清。",
+      "channel": "public",
+      "shot": "execution"
+    },
+    {
+      "id": "empty",
+      "duration": 4,
+      "kind": "day",
+      "speaker": -1,
+      "text": "本日审判结束。{seat:3}的席位暂时留空。",
+      "channel": "public",
+      "shot": "speaker",
+      "camera_seat": 3,
+      "camera_target": 0.95,
+      "empty_seats": [3],
+      "camera_preset": "medium"
+    },
+    {
+      "id": "second_night",
+      "duration": 4,
+      "kind": "closing",
+      "speaker": -1,
+      "text": "第二夜。隔离协议再次启动。",
+      "channel": "public",
+      "shot": "wide",
+      "camera_preset": "outer"
+    },
+    {
+      "id": "second_wolf",
+      "duration": 7,
+      "kind": "wolf",
+      "speaker": 0,
+      "text": "今晚刀{seat:4}。她问{seat:5}的话，已经问到边上了。",
+      "channel": "wolf",
+      "shot": "terminal",
+      "pose": 3
+    },
+    {
+      "id": "second_dawn",
+      "duration": 5,
+      "kind": "opening",
+      "speaker": -1,
+      "text": "天亮了。{seat:10}、{seat:3}的牌位亮着。",
+      "channel": "public",
+      "shot": "wide",
+      "memorial_seats": [10, 3],
+      "camera_preset": "outer"
+    },
+    {
+      "id": "hunter",
+      "duration": 8,
+      "kind": "hunter",
+      "speaker": 4,
+      "text": "我最后再问一次，{seat:5}：你回来的时候，手里真的空着吗？……不用答了。",
+      "channel": "public",
+      "shot": "hunter",
+      "camera_seat": 4,
+      "skill_target": 5,
+      "pose": 2
+    },
+    {
+      "id": "death_reveal",
+      "duration": 7,
+      "kind": "death_reveal",
+      "speaker": -1,
+      "text": "枪声落下。{seat:4}与{seat:5}的牌位亮起。",
+      "channel": "public",
+      "shot": "death_reveal",
+      "camera_seat": 5,
+      "memorial_seats": [10, 3, 4, 5]
+    },
+    {
+      "id": "end",
+      "duration": 15,
+      "kind": "day",
+      "speaker": -1,
+      "text": "演出样片结束。可回看放逐坠落、枪线与次日牌位。",
+      "channel": "public",
+      "shot": "orbit",
+      "camera_preset": "outer"
+    }
+  ]
+}

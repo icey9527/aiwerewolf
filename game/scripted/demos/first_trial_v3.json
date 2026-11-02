@@ -1,0 +1,917 @@
+{
+  "title": "圆桌审判 · 第一案：警徽之下",
+  "beats": [
+    {
+      "id": "establish",
+      "duration": 17.0,
+      "kind": "day",
+      "speaker": -1,
+      "text": "圆桌协议启动。十二名参与者，各自保有秘密。今晚，先活下来的人才有资格开口。",
+      "channel": "public",
+      "shot": "intro",
+      "camera_seat": 0
+    },
+    {
+      "id": "first_night",
+      "duration": 5,
+      "kind": "closing",
+      "speaker": -1,
+      "text": "第一夜。隔离协议启动，公共频道即将关闭。请所有人回到自己的席位。",
+      "channel": "public",
+      "shot": "wide",
+      "camera_preset": "outer"
+    },
+    {
+      "id": "sealed",
+      "duration": 4,
+      "kind": "sealed",
+      "speaker": -1,
+      "text": "隔离完成。夜间行动开始。",
+      "channel": "public",
+      "shot": "wide",
+      "camera_preset": "high"
+    },
+    {
+      "id": "wolf",
+      "duration": 9,
+      "kind": "wolf",
+      "speaker": 0,
+      "wolves": [
+        0,
+        5,
+        9,
+        11
+      ],
+      "text": "狼队四人：我、{seat:5}、{seat:9}、{seat:11}。今晚刀 {seat:1}，她记票最细。明天起来，把票往 {seat:6} 身上带，别急着冲。",
+      "channel": "wolf",
+      "shot": "terminal",
+      "pose": 3
+    },
+    {
+      "id": "oracle",
+      "duration": 8,
+      "kind": "oracle",
+      "speaker": 2,
+      "check_target": 5,
+      "text": "预言家查验：{seat:5}，查杀。警徽竞选时直接报出来，别留手。今晚我会留警徽流。",
+      "channel": "private",
+      "shot": "terminal",
+      "pose": 2
+    },
+    {
+      "id": "opening",
+      "duration": 6,
+      "kind": "opening",
+      "speaker": -1,
+      "text": "天亮了。{seat:1} 的席位没有亮起。先听遗言。",
+      "channel": "public",
+      "shot": "wide",
+      "memorial_seats": [
+        1
+      ],
+      "camera_preset": "outer"
+    },
+    {
+      "id": "claude_last",
+      "duration": 6,
+      "kind": "day",
+      "speaker": 1,
+      "text": "我是女巫，解药没动，毒还在。{seat:0} 的警徽流别全信。我走了，毒会带走最像狼的那个。",
+      "channel": "public",
+      "shot": "speaker",
+      "camera_seat": 1,
+      "camera_preset": "medium",
+      "pose": 9,
+      "reactions": [
+        {
+          "seat": 0,
+          "pose": 5
+        },
+        {
+          "seat": 2,
+          "pose": 1
+        },
+        {
+          "seat": 5,
+          "pose": 6
+        }
+      ],
+      "dr2_shot": "DOLLYIN_05"
+    },
+    {
+      "id": "signup",
+      "duration": 4,
+      "kind": "sheriff_signup",
+      "speaker": -1,
+      "text": "警长竞选开始。上警：{seat:0}、{seat:2}、{seat:9}。其余人准备听发言。",
+      "channel": "public",
+      "shot": "wide",
+      "candidates": [
+        0,
+        2,
+        9
+      ],
+      "camera_transition": "cut",
+      "camera_preset": "outer",
+      "camera_orbit": true,
+      "orbit_seat": 0
+    },
+    {
+      "id": "gpt_run",
+      "duration": 6,
+      "kind": "day",
+      "speaker": 0,
+      "text": "我跳预言家。{seat:11} 金水，警徽流先打 5、8。今天出 {seat:6}，先把这个抗推位按死。",
+      "channel": "public",
+      "shot": "speaker",
+      "pose": 2,
+      "camera_preset": "medium",
+      "pose_changes": [
+        {
+          "at": 0.58,
+          "pose": 5
+        }
+      ],
+      "reactions": [
+        {
+          "seat": 2,
+          "pose": 7
+        },
+        {
+          "seat": 5,
+          "pose": 6
+        },
+        {
+          "seat": 6,
+          "pose": 8
+        },
+        {
+          "seat": 8,
+          "pose": 7
+        }
+      ],
+      "dr2_shot": "PAN_L_00"
+    },
+    {
+      "id": "deepseek_run",
+      "duration": 6,
+      "kind": "day",
+      "speaker": 2,
+      "text": "我也跳预言家。昨晚验 {seat:5}，查杀。对跳就上票，我不退；警徽不给对跳位。",
+      "channel": "public",
+      "shot": "speaker",
+      "pose": 7,
+      "camera_preset": "medium",
+      "pose_changes": [
+        {
+          "at": 0.5,
+          "pose": 2
+        }
+      ],
+      "reactions": [
+        {
+          "seat": 0,
+          "pose": 6
+        },
+        {
+          "seat": 5,
+          "pose": 6
+        },
+        {
+          "seat": 9,
+          "pose": 5
+        },
+        {
+          "seat": 10,
+          "pose": 7
+        }
+      ],
+      "dr2_shot": "PAN_R_00"
+    },
+    {
+      "id": "grok_run",
+      "duration": 5,
+      "kind": "day",
+      "speaker": 9,
+      "text": "我站 {seat:0}。{seat:2} 这么顺，别是倒钩。今天先出 {seat:6}，明天再算警徽。",
+      "channel": "public",
+      "shot": "speaker",
+      "camera_preset": "medium",
+      "pose": 5,
+      "reactions": [
+        {
+          "seat": 0,
+          "pose": 1
+        },
+        {
+          "seat": 2,
+          "pose": 7
+        },
+        {
+          "seat": 6,
+          "pose": 6
+        }
+      ],
+      "dr2_shot": "DOLLYIN_01"
+    },
+    {
+      "id": "qwen_probe",
+      "duration": 6,
+      "kind": "day",
+      "speaker": 8,
+      "text": "两个预言家对跳，{seat:0} 还发金水。悍跳味太重，先听 {seat:2} 的查杀。别急着归票。",
+      "channel": "public",
+      "shot": "side",
+      "pose": 7,
+      "camera_preset": "close",
+      "reactions": [
+        {
+          "seat": 0,
+          "pose": 6
+        },
+        {
+          "seat": 2,
+          "pose": 1
+        },
+        {
+          "seat": 5,
+          "pose": 6
+        },
+        {
+          "seat": 9,
+          "pose": 5
+        }
+      ],
+      "dr2_shot": "Q_ZOOMIN_00"
+    },
+    {
+      "id": "minimax_probe",
+      "duration": 6,
+      "kind": "day",
+      "speaker": 7,
+      "text": "为什么警徽流先打 5？5 是 {seat:2} 的查杀，不是你的人。这个顺序说不通，{seat:0} 你解释一下。",
+      "channel": "public",
+      "shot": "side",
+      "pose": 4,
+      "camera_preset": "close",
+      "reactions": [
+        {
+          "seat": 0,
+          "pose": 6
+        },
+        {
+          "seat": 2,
+          "pose": 7
+        },
+        {
+          "seat": 5,
+          "pose": 4
+        },
+        {
+          "seat": 4,
+          "pose": 5
+        }
+      ],
+      "dr2_shot": "Q_ZOOMIN_01"
+    },
+    {
+      "id": "doubao_back",
+      "duration": 6,
+      "kind": "day",
+      "speaker": 11,
+      "text": "金水是保人，不是认狼表。{seat:7}，你别把警徽流和查杀搅一起。今天要出就出 {seat:6}，别乱刀。",
+      "channel": "public",
+      "shot": "speaker",
+      "pose": 12,
+      "camera_preset": "medium",
+      "reactions": [
+        {
+          "seat": 7,
+          "pose": 6
+        },
+        {
+          "seat": 0,
+          "pose": 1
+        },
+        {
+          "seat": 5,
+          "pose": 6
+        },
+        {
+          "seat": 6,
+          "pose": 8
+        }
+      ],
+      "dr2_shot": "PAN_R_01"
+    },
+    {
+      "id": "mimo_pushback",
+      "duration": 6,
+      "kind": "day",
+      "speaker": 6,
+      "text": "{seat:0} 没验我，就想抗推我。我要是狼，昨晚为什么不刀 {seat:2}？今天我自证，出我可以，别拿警徽压我。",
+      "channel": "public",
+      "shot": "speaker",
+      "camera_preset": "close",
+      "pose": 8,
+      "reactions": [
+        {
+          "seat": 0,
+          "pose": 6
+        },
+        {
+          "seat": 2,
+          "pose": 1
+        },
+        {
+          "seat": 7,
+          "pose": 4
+        },
+        {
+          "seat": 8,
+          "pose": 7
+        }
+      ],
+      "dr2_shot": "HANRON_START_L_00"
+    },
+    {
+      "id": "withdraw",
+      "duration": 4,
+      "kind": "sheriff_withdraw",
+      "speaker": -1,
+      "text": "{seat:9} 退水。警上剩余两位，警徽票继续。退水不撕警徽，票型照常公开。",
+      "channel": "public",
+      "shot": "wide",
+      "withdrawn": [
+        9
+      ],
+      "camera_transition": "cut",
+      "camera_preset": "outer",
+      "camera_orbit": true,
+      "orbit_seat": 9
+    },
+    {
+      "id": "elected",
+      "duration": 4,
+      "kind": "sheriff_elected",
+      "speaker": -1,
+      "text": "{seat:0} 当选警长。警徽 1.5 票。",
+      "channel": "public",
+      "shot": "speaker",
+      "camera_seat": 0,
+      "elected": 0,
+      "camera_preset": "medium"
+    },
+    {
+      "id": "qwen_press",
+      "duration": 7,
+      "kind": "day",
+      "speaker": 8,
+      "text": "{seat:0}，你归票 {seat:6}，警徽流却打 5、8。女巫没救，不是平安夜；场上也没人跳守卫。这个警徽流，你重新说一遍。",
+      "channel": "public",
+      "shot": "side",
+      "pose": 2,
+      "camera_preset": "close",
+      "pose_changes": [
+        {
+          "at": 0.55,
+          "pose": 7
+        }
+      ],
+      "reactions": [
+        {
+          "seat": 0,
+          "pose": 6
+        },
+        {
+          "seat": 2,
+          "pose": 7
+        },
+        {
+          "seat": 5,
+          "pose": 6
+        },
+        {
+          "seat": 9,
+          "pose": 5
+        }
+      ],
+      "dr2_shot": "DOLLYIN_04"
+    },
+    {
+      "id": "gpt_defend",
+      "duration": 7,
+      "kind": "day",
+      "speaker": 0,
+      "text": "{seat:8} 急着拆台，是在替 {seat:5} 挡票。今天抗推 {seat:6}，票型见。我的警徽流不改，明天验 8。",
+      "channel": "public",
+      "shot": "speaker",
+      "camera_preset": "medium",
+      "pose": 6,
+      "pose_changes": [
+        {
+          "at": 0.55,
+          "pose": 1
+        }
+      ],
+      "reactions": [
+        {
+          "seat": 8,
+          "pose": 7
+        },
+        {
+          "seat": 6,
+          "pose": 8
+        },
+        {
+          "seat": 2,
+          "pose": 5
+        },
+        {
+          "seat": 9,
+          "pose": 5
+        }
+      ],
+      "dr2_shot": "PAN_U_00"
+    },
+    {
+      "id": "gemini_branch",
+      "duration": 6,
+      "kind": "day",
+      "speaker": 3,
+      "text": "我换个角度：{seat:5} 一直没说话。划水的人，为什么不反驳？今天要是不出 {seat:6}，我宁可看 5 的票型。",
+      "channel": "public",
+      "shot": "speaker",
+      "camera_preset": "medium",
+      "pose": 3,
+      "reactions": [
+        {
+          "seat": 5,
+          "pose": 4
+        },
+        {
+          "seat": 0,
+          "pose": 6
+        },
+        {
+          "seat": 6,
+          "pose": 6
+        },
+        {
+          "seat": 2,
+          "pose": 5
+        }
+      ],
+      "dr2_shot": "PAN_R_OVER_00",
+      "dr2_scale": 0.35
+    },
+    {
+      "id": "kimi_slip",
+      "duration": 6,
+      "kind": "day",
+      "speaker": 5,
+      "text": "我在听。{seat:2} 说查杀我，那就拿出警徽流，别只喊口号。今天你们出我，明天别后悔。",
+      "channel": "public",
+      "shot": "speaker",
+      "pose": 6,
+      "camera_preset": "medium",
+      "pose_changes": [
+        {
+          "at": 0.62,
+          "pose": 1
+        }
+      ],
+      "reactions": [
+        {
+          "seat": 2,
+          "pose": 7
+        },
+        {
+          "seat": 0,
+          "pose": 1
+        },
+        {
+          "seat": 4,
+          "pose": 5
+        },
+        {
+          "seat": 6,
+          "pose": 8
+        }
+      ],
+      "dr2_shot": "ZOOMIN_02"
+    },
+    {
+      "id": "glm_ask",
+      "duration": 6,
+      "kind": "day",
+      "speaker": 4,
+      "text": "{seat:5}，{seat:2} 报你查杀时你点头了。你认，还是不认？别绕，给一句准话。",
+      "channel": "public",
+      "shot": "side",
+      "pose": 5,
+      "camera_preset": "close",
+      "reactions": [
+        {
+          "seat": 5,
+          "pose": 6
+        },
+        {
+          "seat": 2,
+          "pose": 1
+        },
+        {
+          "seat": 0,
+          "pose": 1
+        },
+        {
+          "seat": 6,
+          "pose": 8
+        }
+      ],
+      "dr2_shot": "Q_ZOOMIN_02"
+    },
+    {
+      "id": "wenxin_note",
+      "duration": 6,
+      "kind": "day",
+      "speaker": 10,
+      "text": "我记了一下票。第一夜不是自刀，{seat:0} 的警徽流和查杀对不上。今天出 5 之前，先让 0 把 8 的验人顺序说清楚。",
+      "channel": "public",
+      "shot": "speaker",
+      "camera_preset": "medium",
+      "pose": 1,
+      "pose_changes": [
+        {
+          "at": 0.5,
+          "pose": 2
+        }
+      ],
+      "reactions": [
+        {
+          "seat": 0,
+          "pose": 6
+        },
+        {
+          "seat": 8,
+          "pose": 7
+        },
+        {
+          "seat": 5,
+          "pose": 4
+        },
+        {
+          "seat": 2,
+          "pose": 1
+        }
+      ],
+      "dr2_shot": "DOLLYBACK_01"
+    },
+    {
+      "id": "mimo_last",
+      "duration": 6,
+      "kind": "day",
+      "speaker": 6,
+      "text": "我出局可以。必须撕警徽，别让狼拿警徽归票。{seat:5} 是查杀，{seat:0} 是警徽，你们自己选。",
+      "channel": "public",
+      "shot": "speaker",
+      "camera_preset": "close",
+      "pose": 10,
+      "reactions": [
+        {
+          "seat": 0,
+          "pose": 1
+        },
+        {
+          "seat": 5,
+          "pose": 6
+        },
+        {
+          "seat": 4,
+          "pose": 5
+        },
+        {
+          "seat": 8,
+          "pose": 7
+        }
+      ],
+      "dr2_shot": "DOLLYBACK_00"
+    },
+    {
+      "id": "deepseek_last",
+      "duration": 6,
+      "kind": "day",
+      "speaker": 2,
+      "text": "今天出 {seat:5}。她是查杀，不是抗推。{seat:0} 的警徽明天再算，先别分票。",
+      "channel": "public",
+      "shot": "speaker",
+      "pose": 5,
+      "camera_preset": "medium",
+      "pose_changes": [
+        {
+          "at": 0.5,
+          "pose": 2
+        }
+      ],
+      "reactions": [
+        {
+          "seat": 0,
+          "pose": 6
+        },
+        {
+          "seat": 5,
+          "pose": 6
+        },
+        {
+          "seat": 6,
+          "pose": 8
+        },
+        {
+          "seat": 8,
+          "pose": 7
+        }
+      ],
+      "dr2_shot": "DOLLYIN_00"
+    },
+    {
+      "id": "vote",
+      "duration": 6,
+      "kind": "vote",
+      "speaker": -1,
+      "text": "投票通道开启。警长 1.5 票，票型将公开。",
+      "channel": "public",
+      "shot": "vote",
+      "vote_from": 2,
+      "vote_to": 5,
+      "votes": [
+        {
+          "from": 2,
+          "to": 5
+        },
+        {
+          "from": 4,
+          "to": 5
+        },
+        {
+          "from": 7,
+          "to": 5
+        },
+        {
+          "from": 8,
+          "to": 5
+        },
+        {
+          "from": 9,
+          "to": 5
+        },
+        {
+          "from": 10,
+          "to": 5
+        },
+        {
+          "from": 11,
+          "to": 5
+        },
+        {
+          "from": 0,
+          "to": 6,
+          "weight": 1.5
+        },
+        {
+          "from": 3,
+          "to": 6
+        },
+        {
+          "from": 5,
+          "to": 6
+        }
+      ]
+    },
+    {
+      "id": "exile",
+      "duration": 8,
+      "kind": "execution",
+      "speaker": 5,
+      "exit_seat": 5,
+      "text": "票型 7 : 3.5。……好，我是狼。{seat:0} 的警徽流，你们记住。",
+      "channel": "public",
+      "shot": "execution",
+      "pose": 1,
+      "reactions": [
+        {
+          "seat": 0,
+          "pose": 1
+        },
+        {
+          "seat": 6,
+          "pose": 10
+        },
+        {
+          "seat": 4,
+          "pose": 5
+        },
+        {
+          "seat": 9,
+          "pose": 6
+        }
+      ],
+      "camera_shake": 0.4
+    },
+    {
+      "id": "empty",
+      "duration": 4,
+      "kind": "day",
+      "speaker": -1,
+      "text": "{seat:5} 的席位留空。今晚警徽仍在 {seat:0} 手里。",
+      "channel": "public",
+      "shot": "speaker",
+      "camera_seat": 5,
+      "camera_target": 0.95,
+      "empty_seats": [
+        5
+      ],
+      "camera_preset": "medium",
+      "reactions": [
+        {
+          "seat": 0,
+          "pose": 1
+        },
+        {
+          "seat": 9,
+          "pose": 6
+        },
+        {
+          "seat": 4,
+          "pose": 5
+        },
+        {
+          "seat": 2,
+          "pose": 1
+        }
+      ]
+    },
+    {
+      "id": "second_night",
+      "duration": 4,
+      "kind": "closing",
+      "speaker": -1,
+      "text": "第二夜。隔离协议启动。",
+      "channel": "public",
+      "shot": "wide",
+      "camera_preset": "outer"
+    },
+    {
+      "id": "second_wolf",
+      "duration": 7,
+      "kind": "wolf",
+      "speaker": 0,
+      "wolves": [
+        0,
+        9,
+        11
+      ],
+      "text": "刀 {seat:4}。他刚才问 {seat:5} 那句话，已经问到枪口上了。明天把票往 {seat:2} 身上带。",
+      "channel": "wolf",
+      "shot": "terminal",
+      "pose": 1,
+      "reactions": [
+        {
+          "seat": 9,
+          "pose": 10
+        },
+        {
+          "seat": 11,
+          "pose": 9
+        }
+      ]
+    },
+    {
+      "id": "second_oracle",
+      "duration": 6,
+      "kind": "oracle",
+      "speaker": 2,
+      "check_target": 9,
+      "text": "第二晚查验：{seat:9}，查杀。两狼的票型都对上了。明天先出 9，警徽再验。",
+      "channel": "private",
+      "shot": "terminal",
+      "pose": 1
+    },
+    {
+      "id": "second_dawn",
+      "duration": 5,
+      "kind": "opening",
+      "speaker": -1,
+      "text": "天亮。{seat:4} 的席位没有回应。{seat:1}、{seat:5} 的牌位亮着。",
+      "channel": "public",
+      "shot": "wide",
+      "memorial_seats": [
+        1,
+        5
+      ],
+      "camera_preset": "outer",
+      "reactions": [
+        {
+          "seat": 0,
+          "pose": 1
+        },
+        {
+          "seat": 9,
+          "pose": 6
+        },
+        {
+          "seat": 2,
+          "pose": 1
+        },
+        {
+          "seat": 11,
+          "pose": 9
+        }
+      ],
+      "camera_orbit": true
+    },
+    {
+      "id": "hunter",
+      "duration": 8,
+      "kind": "hunter",
+      "speaker": 4,
+      "text": "我是猎人。{seat:9}，你站 {seat:0} 站了一整天——这一枪，你接好。警徽在 0 手里，别散票。",
+      "channel": "public",
+      "shot": "hunter",
+      "camera_seat": 4,
+      "skill_target": 9,
+      "pose": 2,
+      "pose_changes": [
+        {
+          "at": 0.6,
+          "pose": 1
+        }
+      ],
+      "reactions": [
+        {
+          "seat": 9,
+          "pose": 6
+        },
+        {
+          "seat": 0,
+          "pose": 1
+        },
+        {
+          "seat": 2,
+          "pose": 1
+        },
+        {
+          "seat": 6,
+          "pose": 10
+        }
+      ],
+      "dr2_shot": "HANRON_START_R_00",
+      "camera_shake": 0.6
+    },
+    {
+      "id": "death_reveal",
+      "duration": 7,
+      "kind": "death_reveal",
+      "speaker": -1,
+      "text": "枪声落下。{seat:4} 与 {seat:9} 的牌位亮起。",
+      "channel": "public",
+      "shot": "death_reveal",
+      "camera_seat": 9,
+      "memorial_seats": [
+        1,
+        5,
+        4,
+        9
+      ],
+      "camera_transition": "cut",
+      "camera_shake": 0.2
+    },
+    {
+      "id": "end",
+      "duration": 15,
+      "kind": "day",
+      "speaker": -1,
+      "text": "演出样片结束。警徽仍在 {seat:0} 手里，牌桌还没有结束。",
+      "channel": "public",
+      "shot": "orbit",
+      "camera_preset": "outer",
+      "reactions": [
+        {
+          "seat": 0,
+          "pose": 1
+        },
+        {
+          "seat": 2,
+          "pose": 1
+        },
+        {
+          "seat": 6,
+          "pose": 10
+        },
+        {
+          "seat": 11,
+          "pose": 9
+        }
+      ]
+    }
+  ]
+}

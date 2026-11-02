@@ -1,0 +1,18 @@
+seat: 10
+name: Grok
+color: "#e0b45a"
+memorial: 11
+focus: 0.11
+states:
+  0: 常态.png
+  1: 从容.png
+  2: 发言.png
+  3: 沉思.png
+  4: 观望.png
+  5: 质疑.png
+  6: 被质疑.png
+  7: 反驳.png
+  8: 愤怒.png
+  9: 失落.png
+  10: 无奈.png
+  11: 牌位.png

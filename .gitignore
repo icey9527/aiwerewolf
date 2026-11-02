@@ -1,0 +1,16 @@
+.godot/
+**/.godot/
+tools/godot/*.exe
+*.import
+export/
+assets/portraits/local/
+.DS_Store
+Thumbs.db
+参考/
+# 本机预览字体不作为可分发素材提交
+**/assets/fonts/local-preview-*
+captures/
+.gdskills/
+# 原画源文件（PSD/压缩包，约 775MB），不进仓库
+art/
+.claude
